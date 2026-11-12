@@ -335,12 +335,6 @@ function draw(){
     x.fillText(r.v+' 元',dx+dw-46,yy-3);
     x.font='17px "Microsoft YaHei"';x.fillStyle='#B08850';
     x.fillText(r.n,dx+dw-46,yy+25);
-    if(i<rows.length-1){
-      x.setLineDash([2,7]);
-      x.strokeStyle='#E0C48C';x.lineWidth=1.6;
-      x.beginPath();x.moveTo(dx+46,yy+rs-14);x.lineTo(dx+dw-46,yy+rs-14);x.stroke();
-      x.setLineDash([]);
-    }
   });
 
   /* === 4. 发展人 === */
@@ -356,7 +350,7 @@ function draw(){
   var nC=['发','展','人'],ns=68;
   var nx2=CX-(nC.length-1)*ns/2;
   for(var i=0;i<nC.length;i++)x.fillText(nC[i],nx2+i*ns,py+30);
-  var ny=912,nw2=380,nh=66,nyx=CX-nw2/2;
+  var ny=912,nw2=460,nh=66,nyx=CX-nw2/2;
   x.save();
   x.shadowColor='rgba(60,4,8,.35)';x.shadowBlur=10;x.shadowOffsetY=4;
   var ng=x.createLinearGradient(0,ny,0,ny+nh);
